@@ -1,0 +1,18 @@
+{
+    "name": "vitexsoftware/ease-fuelux",
+    "description": "PHP componets for FuelUX.",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "require": {
+        "vitexsoftware/ease-framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ease\\FuelUX\\": "Ease/FuelUX"
+        }
+    }
+}
