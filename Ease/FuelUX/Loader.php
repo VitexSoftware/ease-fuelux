@@ -15,7 +15,10 @@ namespace Ease\FuelUX;
  */
 class Loader extends \Ease\Html\DivTag
 {
-
+    /**
+     * FuelUX Loader
+     * @param string $id identifier
+     */
     public function __construct($id = null)
     {
         parent::__construct(null,
@@ -23,6 +26,9 @@ class Loader extends \Ease\Html\DivTag
         Part::fuelUXize();
     }
 
+    /**
+     * Include inline js/css
+     */
     public function finalize()
     {
         \Ease\Shared::webPage()->addJavascript("$('#".$this->getTagID()."').loader();");
@@ -37,6 +43,6 @@ class Loader extends \Ease\Html\DivTag
     height: 100px;
     visibility: hidden;S
 }​
-            ');
+');
     }
 }

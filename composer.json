@@ -10,9 +10,20 @@
     "require": {
         "vitexsoftware/ease-framework": "dev-master"
     },
+    "require-dev": {
+        "phpunit/php-token-stream": "~1.2",
+        "phpunit/phpunit": "5.3.*"
+    },
     "autoload": {
         "psr-4": {
             "Ease\\FuelUX\\": "Ease/FuelUX"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\FuelUX\\": "tests/Ease/FuelUX",
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
+            "Test\\Ease\\TWB\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB"
         }
     }
 }
